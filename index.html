@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FreeMentors|index</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Free Mentors</h1>
+            </div>
+             <nav>
+                 <ul>
+                     <li> <a href="#signUpModal" class="signUpModal button" >Sign up</a></li>
+                     <li> <a href="#signInModal" class="signInModal button">Sign in</a></li>
+                 </ul>
+             </nav>
+        </div>
+    </header>
+
+    <section id="bodyContent">
+
+        <img src="images/mentor.png" class="index-image">
+
+
+          <p>To benefit from our free of charge mentorship sessions 
+               ... 
+               <span>
+                    <button  class="signUpModal button"><a href="#signUpModal">Sign up Now</a></button>
+                </span>
+          </p>
+            
+          
+        
+    </section>
+
+    <footer>
+       <p>Free Mentors, Copyright &copy; 2019</p> 
+    </footer>
+
+    
+
+
+    <!-- the sign up modal -->
+    <div class="modal" id="signUpModalElts">
+        <div class="modal-content">
+
+                    <div class="modal-header">
+                        <span class="button closeModalButtonSignUp">&times;</span>
+                        <h2>Sign up</h2>
+                    </div>
+
+                    <div class="modal-body">
+                        <form action="" method="post" class="signUp-form">
+                            <p>
+                                <label for="fullname">Name: </label> <br>
+                                <input type="text" id="fullName" name="fullName" placeholder="Enter your Full Name..." required>   
+                            </p>
+                                    
+                            <p>
+                                <label for="dateOfBirth">Date of Birth: </label> <br>
+                                <input type="date" id="dateOfBirth" name="dateOfBirth" placeholder="Enter your date of Birth..." required> 
+                            </p>
+            
+                            <p>
+                                <label for="email">Email: </label>  <br>  
+                                <input type="email" id="email" name="email" placeholder="Enter your Email..." required>     
+                            </p>
+            
+                            <p>
+                                <label for="userName">User name: </label>  <br>
+                                <input type="text" id="userName" name="userName" placeholder="Enter your User Name..." required>
+                            </p>
+                                    
+                            <p>
+                                <label for="passWord">Password: </label>  <br>
+                                <input type="password" id="passWord" name="passWord" placeholder="Enter your password..." required>
+                            </p>
+            
+                            <p>
+                                <label for="ConfirmPassWord">Confirm it!: </label> <br>
+                                <input type="password" id="ConfirmPassWord" name="ConfirmPassWord" placeholder="Confirm your password..." required>
+                            </p>
+                                     
+                        </form>
+                    </div>
+
+                    
+
+                    <div class="modal-footer">
+                            <button class="button" type="submit" name="action">Subscribe!</button>
+                    </div>
+            </div>
+    </div>
+
+    <!-- the sign in modal -->
+    <div class="modal" id="signInModal">
+
+            <div class="modal-content">
+    
+                        <div class="modal-header">
+                                <span class="button closeModalButtonSignIn">&times;</span>
+                                <h2>Sign up</h2>
+                        </div>
+
+                        <div class="modal-body">
+                            <form action="" method="post"  class="signIn-form">
+                            
+                                <input type="text" id="userName" name="userName" placeholder="Enter your User Name..." required></form>
+                                <input type="password" id="passWord" name="passWord" placeholder="Enter your password..." required>
+                                
+                            </form>
+                        </div>
+    
+                        <div class="modal-footer">
+                                <button class="button" type="submit" name="action">Sign in</button>
+                        </div>
+            </div>
+    </div>
+
+<script src="js/mainIndex.js"></script>    
+
+
+</body>
+</html> 
